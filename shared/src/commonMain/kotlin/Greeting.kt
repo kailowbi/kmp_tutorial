@@ -1,7 +1,11 @@
+import kotlin.random.Random
+
 class Greeting {
     private val platform = getPlatform()
 
-    fun greet(): String {
-        return "Hello, ${platform.name}!"
+    fun greet(): List<String> = buildList {
+        add(if (Random.nextBoolean()) "Hi" else "hello!")
+        add("Guess what this is! > ${platform.name.reversed()}")
+        add(daysPhrase())
     }
 }
