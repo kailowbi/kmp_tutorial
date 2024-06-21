@@ -15,3 +15,7 @@ This is a Kotlin Multiplatform project targeting Android, iOS.
 
 
 Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+
+
+# メモ
+- Android Studio上でSwiftUIの記述する場合、for await in [async メソッド] 部分は静的解析されない?
